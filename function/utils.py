@@ -30,5 +30,5 @@ def load_all_files_to_spark_df(spark_session, path_pattern):
     return df
 
 def read_txt(path):
-    with open(path) as f:
+    with open(path, 'r') as f:
         return f.read()
