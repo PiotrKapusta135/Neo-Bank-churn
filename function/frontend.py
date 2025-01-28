@@ -14,4 +14,4 @@ def header():
 
 def train_df():
     train_df = get_churn_train_df()
-    st.dataframe(train_df.show(10))
+    st.dataframe(train_df)
