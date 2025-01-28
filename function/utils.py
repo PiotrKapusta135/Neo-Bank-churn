@@ -4,6 +4,8 @@ import streamlit as st
 import glob
 from pyspark.sql import SparkSession
 import os
+os.environ['JAVA_HOME'] = '/usr/lib/jvm/java-11-openjdk-amd64'
+
 
 def create_spark_session(app_name):
     session = SparkSession.builder\
