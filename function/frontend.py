@@ -4,7 +4,7 @@ from function.utils import read_txt
 
 
 def subheader():
-    overview_path = '../static/overview.txt'
+    overview_path = 'static/overview.txt'
     overview = read_txt(overview_path)
     st.subheader(overview)
 
