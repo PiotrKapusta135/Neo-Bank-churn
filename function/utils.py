@@ -8,6 +8,7 @@ from pyspark.sql import SparkSession
 def create_spark_session(app_name):
     session = SparkSession.builder\
         .appName(app_name)\
+        .master("local[*]")\
         .config("spark.sql.legacy.parquet.nanosAsLong", "true") \
         .config("spark.jars", "/utils/snappy-java-1.1.10.5.jar") \
         .getOrCreate()
