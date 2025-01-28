@@ -3,7 +3,6 @@ import numpy as np
 import streamlit as st
 import glob
 from pyspark.sql import SparkSession
-import os
 
 
 def create_spark_session(app_name):
@@ -30,3 +29,6 @@ def load_all_files_to_spark_df(spark_session, path_pattern):
         df = df.union(load_parquet_to_pyspark_df(spark_session, file))
     return df
 
+def read_txt(path):
+    with open(path) as f:
+        return f.read()

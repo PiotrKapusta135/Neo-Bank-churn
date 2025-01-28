@@ -1,0 +1,2 @@
+This project is connected to Kaggle's "Neo Bank churn" competition.
+The goal is to use pyspark to analyze and predict customer's churn.
