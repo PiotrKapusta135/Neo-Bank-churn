@@ -3,9 +3,10 @@ import numpy as np
 import streamlit as st
 import glob
 from pyspark.sql import SparkSession
-
+import os
 
 def create_spark_session(app_name):
+    os.environ['JAVA_HOME'] = '/usr/lib/jvm/java-8-openjdk-amd64'
     session = SparkSession.builder\
         .appName(app_name)\
         .master("local[*]")\
