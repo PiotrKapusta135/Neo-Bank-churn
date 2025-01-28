@@ -3,4 +3,3 @@ numpy==2.2.1
 streamlit==1.41.1
 py4j==0.10.9.7
 pyspark==3.5.4
-distutils
