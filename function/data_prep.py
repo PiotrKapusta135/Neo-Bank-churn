@@ -32,3 +32,6 @@ def get_churn_train_df():
     path_pattern = 'data/train_*'
     df = load_all_files_to_spark_df(session, path_pattern)
     return df
+
+def get_df_summary(df):
+    return df.summary()
