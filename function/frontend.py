@@ -3,6 +3,13 @@ from function.data_prep import get_churn_train_df
 from function.utils import read_txt
 
 
+
+def navigation():
+    st.sidebar.title("Navigation")
+    page = st.sidebar.selectbox('Choose Page', ['EDA', 'INFO'])
+    return page
+
+
 def subheader():
     overview_path = 'static/overview.txt'
     overview = read_txt(overview_path)
