@@ -13,5 +13,5 @@ def header():
     subheader()
 
 def train_df():
-    train_df = get_churn_train_df()
+    train_df = get_churn_train_df().limit(10)
     st.dataframe(train_df)
