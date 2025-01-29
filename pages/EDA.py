@@ -10,7 +10,7 @@ left, right = st.columns(2)
 
 with left:
     display_first_n_rows(df, 10)
-    display_df_summary(df)
+    #display_df_summary(df)
 
 with right:
     display_columns_descriptions()
