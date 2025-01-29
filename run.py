@@ -1,6 +1,4 @@
-from function.streamlit_report import streamlit_report
+from function.main_page import main_page
 
 
-streamlit_report()
-
-
+main_page()

@@ -1,0 +1,25 @@
+- Id - unique id ofthis daily table
+- customer_id - unique customer_id
+- interest_rate - bank account interest rate on that day
+- name - name of the person
+- country - country of the person
+- date_of_birth - date of birth of the person
+- address - current address of the person
+- date - date of the events
+- atm_transfer_in - number of ATM pay-ins
+- atm_transfer_out - number of ATM withdrawals
+- bank_transfer_in - number of in-going transactions
+- bank_transfer_out - number of out-going transactions
+- crypto_in - number of buying-crypto transactions
+- crypto_out - number of selling-crypto transactions
+- bank_transfer_in_volume - total volume of in-going transactions
+- bank_transfer_out_volume - total volume of out-going transactions
+- crypto_in_volume - total volume of buying-crypto transactions
+- crypto_out_volume - total volume of selling-crypto transactions
+- churn - Flag if customer will not do any action anymore in the next 12 months (TARGET COLUMN)
+- complaints - number of complaints made
+- touchpoints - list of support touchpoints the customer had that day (the list contains the channel name the customer reached out via)
+- csat_scores - customer satisfaction score the customer gave based on the support touchpoint. Nested dictionary with CSAT by support channel.
+- tenure - days since the customer signed a contract with the bank or had a product activity first time
+- from_competitor - flag indicating if customer came from competitor
+- job - customer's job title
