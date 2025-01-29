@@ -3,7 +3,8 @@ import numpy as np
 import streamlit as st
 
 
-
+def report_config():
+    st.set_page_config(layout='wide')
 
 def read_txt(path):
     with open(path, 'r') as f:

@@ -34,4 +34,4 @@ def get_churn_train_df():
     return df
 
 def get_df_summary(df):
-    return df.summary()
+    return df.summary().toPandas()
